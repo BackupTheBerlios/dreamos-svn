@@ -135,12 +135,12 @@ void shell()
 
 			if (!(_kstrncmp(argv[1], "-a", 2)) || !(_kstrncmp(argv[1], "--all", 5)))
        		{
-				printf("%s %s.%s.%s%s #1 beta CEST 2008 %s\n",NAME,VERSION,PATCHLEVEL,REV_NUM,EXTRAVERSION,cpu_vendor);
+			printf("%s %s.%s%s #1 beta CEST 2008 %s\n",NAME,VERSION,PATCHLEVEL,EXTRAVERSION,cpu_vendor);
 			}
 
 			else if (!(_kstrncmp(argv[1], "-r", 2)) || !(_kstrncmp(argv[1], "--rev", 5)))
        		{
-			 	printf("%s.%s.%s%s\n",VERSION,PATCHLEVEL,REV_NUM,EXTRAVERSION);
+			printf("%s.%s%s\n",VERSION,PATCHLEVEL,EXTRAVERSION);
 			}
 
 			else if (!(_kstrncmp(argv[1], "-h", 2) ) || !(_kstrncmp(argv[1], "--help", 6)))
@@ -285,7 +285,7 @@ printf("\t\t|    \\ ___ ___ |  _  | _______|     |   __|\n");
 printf("\t\t|  |  |  _| -_|| |_| ||       |  |  |__   |\n");
 printf("\t\t|____/|_| |___||_| |_||_|\134_/|_|_____|_____|\n");
 _kcolor (6);
-printf("\t\tRevision: \"%s\"\n",REV_NUM);
+printf("\t\tVersion: \"%s %s.%s%s\"\n", NAME, VERSION, PATCHLEVEL, EXTRAVERSION);
 _kcolor(7);
 logo();
 }
@@ -295,10 +295,10 @@ void logo()
 	_kcolor (5);
 	printf("\n");
 	printf("\t\t\t The Dream Operating System \n"
-	       "\t\t           v0.01%s pre-alpha      \n\n"
+	       "\t\t           v%s.%s%s      \n\n"
 	  "\t\t\t\t Welcome to DreamOS\n"
 	  "\t\t Where dreams don't become Reality and remain dreams. \n"
-	              "\t\t\tR.I.P - Rest in peace with dreamos ^_^        \n",REV_NUM);
+	              "\t\t\tR.I.P - Rest in peace with dreamos ^_^        \n",VERSION, PATCHLEVEL, EXTRAVERSION);
 	
 	printf("\n\n\n\n");
 	_kcolor(7);
