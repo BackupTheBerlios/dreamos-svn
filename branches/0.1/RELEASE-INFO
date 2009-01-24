@@ -1,0 +1,16 @@
+DreamOS v0.1
+
+- Avvio con GRUB (specifiche Multiboot)
+- Driver della tastiera
+- Funzioni di input e output su porte binarie
+- GDT e IDT con relativi handler di eccezioni
+- PIC
+- Funzioni di stampa a video con scrolling
+- Implementazione del PIT
+- Funzioni della libreria ctype, alcune di base della stdio e di manipolazione stringhe
+- Paginazione e gestore di memoria (malloc e free). Pagefault handler.
+- Clock di sistema
+- Rilevazione informazioni di base sul processore tramite CPUID
+- Supporto base per le syscall
+- CLI
+- Script di compilazione e avvio automatico per emulatori
