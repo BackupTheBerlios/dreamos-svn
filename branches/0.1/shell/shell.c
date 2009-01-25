@@ -135,7 +135,7 @@ void shell()
 
 			if (!(_kstrncmp(argv[1], "-a", 2)) || !(_kstrncmp(argv[1], "--all", 5)))
        		{
-			printf("%s %s.%s%s #1 beta CEST 2008 %s\n",NAME,VERSION,PATCHLEVEL,EXTRAVERSION,cpu_vendor);
+			printf("%s %s.%s%s #1 CEST 2009 %s\n",NAME,VERSION,PATCHLEVEL,EXTRAVERSION,cpu_vendor);
 			}
 
 			else if (!(_kstrncmp(argv[1], "-r", 2)) || !(_kstrncmp(argv[1], "--rev", 5)))

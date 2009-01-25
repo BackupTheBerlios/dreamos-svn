@@ -12,7 +12,7 @@ exit 1
 
 else
 make clean 
-make vers
+#make vers
 make 
 make img
 umount boot/os
