@@ -1,0 +1,13 @@
+DreamOS 0.1.1
+
+- Shell riscritta seguendo lo stile di quella del vecchio dreamos.
+- I comandi della shell sono stati spostati in un file apposito: commands.c
+- Introdotta un'altra funzione libc: strcpy().
+- E' stata introdotta libreria posix utsname per l'identificazione dell'OS. 
+- Il comando uname ora sfrutta la libreria utsname.
+- Modificata la funzione che converte un numero decimale in esadecimale.
+- Corretti alcuni errori della strlen
+- Corretto errore che su alcuni pc faceva stampare dello sporco per nomi utenti inferiori a 3 caratteri.
+- Aggiunte definizioni in lingua italiana e inglese per i giorni e i mesi.
+- Comando CPUID ora fornisce informazioni dettagliate sulla CPU.
+- Risolto bug della printf Vedi bug #15200.

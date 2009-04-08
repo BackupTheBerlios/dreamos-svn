@@ -4,8 +4,8 @@
 
 NAME = DreamOS
 VERSION = 0
-PATCHLEVEL = 1
-EXTRAVERSION = -trunk
+PATCHLEVEL = 1.1
+EXTRAVERSION = -brian
 
 CFLAGS = -nostdlib -nostdinc -fomit-frame-pointer -fno-builtin -fno-stack-protector -Wall -march=i686 -m32 -I./include -I./include/io -I./include/drivers -I./include/libc -I./include/processore -I./include/hardware -I./include/mem -I./include/system -I./include/shell -I./include/misc
 
