@@ -1,0 +1,28 @@
+DreamOS ver 0.1.2 Codename: wensleydale - Changelog
+
+Gestione Memoria: ora lo spazio allocato e' uguale a quello della richiesta
+Gestione Memoria: bug #15504 corretti alcuni valori di ritorno di Alloc.
+Gestione Memoria: kmalloc controlla che il valore con la quale venga chiamata sia >0
+Gestione Memoria: Dalla funziome make_heap levato comando start
+
+Shell: Applicata patch che risolve problemi relativi al cursore, inserimento utente e backspace (by vinc94)
+Shell: Comando kmalloc diminuito numero di elementi visualizzati
+Shell: bug #14839 comando non riconosciuto se veniva premuto prima di tutti backspace (by vinc94)
+Shell: Reinserita stampa numero rev alla schermata di avvio.
+Shell: Correzione bug sulla pressione del tasto esc, nr. #15557
+
+Clock: Corretto giorno della settimana (veniva stampato sempre il giorno precedente)
+
+Cpuid: Gli header spostati da cpuid.h a cpuid.c
+Cpuid: Risolto bug che non faceva vedere il processore in uname -i se nn veniva dato prima il comando cpuid
+
+Misc: Eliminato TODO, le cose da fare verranno inserite come task 
+Misc: Eliminata versione commentata di kmalloc
+Misc: Eliminazione diversi warning di compilazione (vedi task #4308)
+Misc: Aggiornato il comando credits.
+
+Debug: Introdotte prime funzioni per il debug in bochs (by tk0)
+
+Libc: Aggiunta funzione memcpy
+
+i/o: Levato da gets \t
