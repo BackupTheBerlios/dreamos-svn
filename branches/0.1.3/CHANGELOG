@@ -1,0 +1,30 @@
+DreamOS ver 0.1.3 Codename: wensleydale - Changelog
+
+Compilazione: Sistemato codice per il makefile
+Compilazione: Aggiunta parametro per abilitare Debug di Bochs in fase di compilazione
+Compilazione: Aggiornamenti script start.sh
+Compilazione: Eliminato dal Makefile il riferimento a hardware/keyboard.c che non era utilizzato.
+
+libc: Correzione di strcpy
+libc: Disabilitazione syscall per putchar. E modifica putchar
+
+misc: aggiunto script grub.py per l'inserimento di uan entry in grub dell'os
+misc: aggiunto in doc il file su come utilizzare lo script di grub
+misc: corretto bug sulla data #15831
+misc: aggiunto comando modprobe (per abilitare alcuni driver, per ora solo il mouse)
+misc: aggiornamento readme
+
+Shell: Modifica gestione comandi ora viene usata una struct con due campi al posto che i 2 vettori di prima
+Shell: Modificato comando sleep, nella struttura dei comandi (vedi bug #15810).
+Shell: spostata definizione della struct cmd da shell.c in shell.h
+
+hardware: abilitato irq per il pic slave
+hardware: miglioramento gestione irq (prima non venivano rilevate le irq dello slave)
+hardware: implementazione prima bozza di driver mouse (rileva movimento se abilitato)
+hardware: eliminato file hardware/keyboard.c perche non piu utilizzato.
+
+io: Invertiti parametri di outportb per seguire la chiamata standard
+io: aggiunto \r nelle stampe per printf e affini
+
+mem: mappata pagina 0xFEE00000 dell'apic nella mem logica
+mem: mappata pagina 0xFEC00000 dell'apic nella mem logica
