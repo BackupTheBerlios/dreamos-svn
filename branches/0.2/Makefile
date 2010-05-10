@@ -5,7 +5,7 @@
 NAME = DreamOS
 VERSION = 0
 PATCHLEVEL = 2.0
-EXTRAVERSION = -trunk
+EXTRAVERSION = -hastur
 
 include Makefile.am
 

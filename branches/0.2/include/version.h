@@ -22,6 +22,6 @@
 
 #define VERSION "0"
 #define PATCHLEVEL "2.0"
-#define EXTRAVERSION "-trunk"
+#define EXTRAVERSION "-hastur"
 #define NAME "DreamOS"
-#define REV_NUM "-r229"
+#define REV_NUM "-r242"

@@ -1,0 +1,39 @@
+CHANGELOG Ver. 2.0 - Name: Hastur
+
+filesystem: aggiunti files: fs/vfs.c include/fs/vfs.h
+filesystem: aggiunta funzione get_mountpoint_id
+filesystem: aggiunta funzione get_rel_path
+filesystem: aggiunta struttura dati directory_operations
+filesystem: aggiunta Aggiunta funzione open
+filesystem: flags inseriti di open: O_CREAT,O_APPEND,O_RDONLY,O_WRONLY,O_RDWR
+filesystem: aggiunto file come modulo initfs per un primo mini-fs
+filesystem: aggiunta funzione read 
+filesystem: aggiunga funzione write
+filesystem: aggiunta funzione vfs opendir, e funzione a livello di initfs.
+filesystem: aggiunta funzione readdir, e relativa implementazione in initfs
+filesystem: aggiunta funzione stat per gestione informazioni su un file
+
+shell: Aggiunto comando ls se non trova nulla stampa i mountpoint. Altrimenti il contenuto del filesystem relativo
+shell: Aggiunto comando cd non del tutto completo, ma funzionante
+shell: Aggiunta struttura dati userenv_t per ora i campi sono: username e cur_path
+shell: Aggiunto comando whoami
+shell: Aumentato da 10 a 30 dimensione di argomenti che si possono prendere da linea di comando
+shell: I comandi di debug sono stati raccolti dentro tester
+shell: Corretti errori lingua in start.sh
+shell: Modificati colori shell
+shell: Aggiunto comando pwd
+shell: Aggiunto comando per testare le syscall: tester try_syscall
+shell: Aggiunto comando tester try_ocreat per testare la creazione di un file.
+
+i/o: corretto bug su stampa di numeri negativi, ora si possono visualizzare correttamente
+
+boot: Aggiunto splash screen in grub.
+
+posix: Aggiunto header fnctl.h per operazioni sui files (Da completare)
+
+Compiling: Aggiornato Makefile per i nuovi files relativi al file system
+Compiling: Ora si puo' anche creare una iso bootabile di dreamos
+Compiling: Makefile modificato, ora rende la compilazione piu leggibile.
+Compiling: Eliminati tutti gli warning.
+
+utils: Aggiunto initfscp, tool per creare un minifs che gira da Ram.
