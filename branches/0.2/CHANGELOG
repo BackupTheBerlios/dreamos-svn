@@ -30,6 +30,9 @@ i/o: corretto bug su stampa di numeri negativi, ora si possono visualizzare corr
 boot: Aggiunto splash screen in grub.
 
 posix: Aggiunto header fnctl.h per operazioni sui files (Da completare)
+posix: Aggiunto header unistd.h per operazioni su files, da terminare
+posix: Aggiunto header dirent.h con le prime strutture dati e funzioni per gestione dir.
+posix: Aggiunto header stat.h per le informazioni sui file, da terminare.
 
 Compiling: Aggiornato Makefile per i nuovi files relativi al file system
 Compiling: Ora si puo' anche creare una iso bootabile di dreamos
