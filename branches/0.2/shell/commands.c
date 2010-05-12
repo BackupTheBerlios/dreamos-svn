@@ -121,7 +121,7 @@ void uname_cmd()
   infos = kmalloc(sizeof(struct utsname *));
   uname(infos);
   if (!(strcmp(argv[1], "-a")) || !(strcmp(argv[1], "--all")))
-    printf("%s %s.%s%s Rev: %s #1 CEST 2009 %s\n", infos->sysname, infos->version, infos->release, EXTRAVERSION,REV_NUM, cpu_vendor);
+    printf("%s %s.%s%s #1 CEST 2009 %s\n", infos->sysname, infos->version, infos->release, EXTRAVERSION, cpu_vendor);
   else if (!(strcmp(argv[1], "-r")) || !(strcmp(argv[1], "--rev")))
     printf("%s.%s%s\n", infos->version, infos->release, EXTRAVERSION);
   else if (!(strcmp(argv[1], "-h") ) || !(strcmp(argv[1], "--help")))
