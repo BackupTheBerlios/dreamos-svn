@@ -47,11 +47,11 @@ void logo()
   _kcolor (BRIGHT_BLUE);
   printf("\n");
   printf("\t\t\t The Dream Operating System \n"
-	 "\t\t           v%s.%s%s %s      \n\n"
+	 "\t\t           v%s.%s%s      \n\n"
 	 "\t\t\t   Welcome to DreamOS\n"
 	 "\t  Where dreams don't become Reality and remain dreams. \n"
 	 "\t          R.I.P - Rest in peace with dreamos ^_^        \n", 
-	 VERSION, PATCHLEVEL, EXTRAVERSION, REV_NUM);
+	 VERSION, PATCHLEVEL, EXTRAVERSION);
 	
   printf("\n\n\n\n");
   _kcolor(WHITE);
