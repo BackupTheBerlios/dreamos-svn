@@ -149,7 +149,7 @@ int printf (const char *format, ...)
             /* Some data type aren't supported yet
              * In the future we will fix this */
             if (*format == 's') {
-		cur_p = strcpy(cur_p, va_arg (ap, char *));
+				cur_p = strcpy(cur_p, va_arg (ap, char *));
             }
             if (*format == 'd' || *format == 'i') {
                 int varint = va_arg (ap, int);

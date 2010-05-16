@@ -166,7 +166,7 @@ void try_ocreat(){
 
 void try_syscall(){
 	int i;
-	int var = -1;
+	int var = -100;
 	printf("Trying sysputch:\n");	
     for(i='A';i<='Z';i++) {
 		asm(
@@ -176,7 +176,7 @@ void try_syscall(){
 			: : "g"(i)	
 		);	
 	}
-	printf("And before ending try to print a -1: %d\n", var);
+	printf("And before ending try to print a -100: %d\n", var);
 	printf("\n");
 }
 

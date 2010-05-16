@@ -1,4 +1,4 @@
-CHANGELOG Ver. 2.0 - Name: Hastur
+	CHANGELOG Ver. 2.0 - Name: Hastur
 
 filesystem: aggiunti files: fs/vfs.c include/fs/vfs.h
 filesystem: aggiunta funzione get_mountpoint_id
