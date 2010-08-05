@@ -89,7 +89,6 @@ void init_IRQ(){
     //init_gdt();
 
     setup_IRQ();
-    asm("sti");
                     
     i=0;
     while(i<IRQ_NUM){
@@ -98,6 +97,8 @@ void init_IRQ(){
     }
     add_IRQ_handler(1, keyboard_isr);
     add_IRQ_handler(0, PIT_handler);
+    asm("sti");
+
 }
 
 void setup_IRQ(){

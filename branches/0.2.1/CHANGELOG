@@ -1,0 +1,14 @@
+CHANGELOG Ver. 0.2.1 - Name: Pollution
+
+fs: aggiunto file passwd con sintassi username:password
+
+i/o: Introdotta la funzione set_shadow(int) per mostrare/nascondere l'echo dei tasti premuti
+
+shell: aggiunto login con utenti presi da file passwd (sono stati inseriti root e user)
+shell: predisposto anche il controllo della password, ma attualmente disabilitato
+shell: aggiunte funzioni di test delle funzioni per il controllo utenti.
+
+misc: Creazione script per generare immagine iso eltorito (bootabile)
+misc: Aggiunto script per aggiunta utenti in dreamos
+misc: Pulito il codice in start.sh, e l'help messo su file separato
+misc: Aggiornato script kernel.lds

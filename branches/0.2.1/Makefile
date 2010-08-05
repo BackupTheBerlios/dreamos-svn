@@ -5,7 +5,7 @@
 NAME = DreamOS
 VERSION = 0
 PATCHLEVEL = 2.1
-EXTRAVERSION = -trunk
+EXTRAVERSION = -pollution
 
 include Makefile.am
 
